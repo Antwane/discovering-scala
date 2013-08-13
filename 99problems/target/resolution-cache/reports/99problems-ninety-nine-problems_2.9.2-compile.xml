@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="99problems"
+		module="ninety-nine-problems_2.9.2"
+		revision="1.0"
+		conf="compile"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom"
+		date="20130812150905"/>
+	<dependencies>
+		<module organisation="org.scala-lang" name="scala-compiler">
+			<revision name="2.9.2" status="release" pubdate="20120413133159" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="2">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html    "/>
+				<metadata-artifact status="no" details="" size="2665" time="0" location="/home/antonio/.ivy2/cache/org.scala-lang/scala-compiler/ivy-2.9.2.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.9.2/scala-compiler-2.9.2.pom"/>
+				<caller organisation="org.scala-tools.testing" name="specs_2.9.1" conf="default, compile, runtime, master" rev="2.9.2" rev-constraint-default="2.9.2" rev-constraint-dynamic="2.9.1" callerrev="1.6.9"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-tools.testing" name="specs_2.9.1">
+			<revision name="1.6.9" status="release" pubdate="20110902071351" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/specs/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="1">
+				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="4925" time="0" location="/home/antonio/.ivy2/cache/org.scala-tools.testing/specs_2.9.1/ivy-1.6.9.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-tools/testing/specs_2.9.1/1.6.9/specs_2.9.1-1.6.9.pom"/>
+				<caller organisation="99problems" name="ninety-nine-problems_2.9.2" conf="compile" rev="1.6.9" rev-constraint-default="1.6.9" rev-constraint-dynamic="1.6.9" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="specs_2.9.1" type="jar" ext="jar" status="no" details="" size="2894790" time="0" location="/home/antonio/.ivy2/cache/org.scala-tools.testing/specs_2.9.1/jars/specs_2.9.1-1.6.9.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-tools/testing/specs_2.9.1/1.6.9/specs_2.9.1-1.6.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.9.2" status="release" pubdate="20120413132921" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, master(*), compile(*), runtime, runtime(*), master" position="0">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html          "/>
+				<metadata-artifact status="no" details="" size="2391" time="0" location="/home/antonio/.ivy2/cache/org.scala-lang/scala-library/ivy-2.9.2.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.9.2/scala-library-2.9.2.pom"/>
+				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="2.9.2" rev-constraint-default="2.9.2" rev-constraint-dynamic="2.9.2" callerrev="2.9.2"/>
+				<caller organisation="org.scala-tools.testing" name="specs_2.9.1" conf="default, compile, runtime, master" rev="2.9.2" rev-constraint-default="2.9.2" rev-constraint-dynamic="2.9.1" callerrev="1.6.9"/>
+				<caller organisation="99problems" name="ninety-nine-problems_2.9.2" conf="compile" rev="2.9.2" rev-constraint-default="2.9.2" rev-constraint-dynamic="2.9.2" callerrev="1.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

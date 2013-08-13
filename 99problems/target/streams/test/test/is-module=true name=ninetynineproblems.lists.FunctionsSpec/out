@@ -1,0 +1,3 @@
+[0m[[0minfo[0m] [0m[32m+ Functions should[0m[0m
+[0m[[0minfo[0m] [0m[32m  + find last element[0m[0m
+[0m[[0minfo[0m] [0m[32m  + throws NoSuchElementException when providing empty list of a given type[0m[0m
